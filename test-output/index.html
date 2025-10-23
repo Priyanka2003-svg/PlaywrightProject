@@ -145,6 +145,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;User Management Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.utiltities.CSVReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;User Management Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.UserManagementTest&quot;/&gt;
@@ -191,7 +194,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCompleteUserManagementFlow')
 data.setCell(0, 2, 'com.tests.UserManagementTest')
-data.setCell(0, 3, 54511);
+data.setCell(0, 3, 54418);
 window.suiteTableData['User_Management_Test_Suite']= { tableData: data, tableDiv: 'times-div-User_Management_Test_Suite'}
 return data;
 }
@@ -217,11 +220,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.tests.UserManagementTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAddUserOnly</span>
+                <br/>
                 <span class="ignored-method-name">testSearchUserOnly</span>
                 <br/>
                 <span class="ignored-method-name">testLoginOnly</span>
-                <br/>
-                <span class="ignored-method-name">testAddUserOnly</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -240,15 +243,15 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">10634 ms</span>
+                <span class="method-start">11445 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCompleteUserManagementFlow</span>
-                <span class="method-start">10677 ms</span>
+                <span class="method-start">11465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65192 ms</span>
+                <span class="method-start">65887 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
