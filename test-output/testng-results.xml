@@ -2,24 +2,24 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-23T15:02:31 IST" name="User Management Test Suite" finished-at="2025-10-23T15:04:33 IST" duration-ms="122748">
+  <suite started-at="2025-10-23T15:31:20 IST" name="User Management Test Suite" finished-at="2025-10-23T15:33:23 IST" duration-ms="122633">
     <groups>
     </groups>
-    <test started-at="2025-10-23T15:02:31 IST" name="User Management Tests" finished-at="2025-10-23T15:04:33 IST" duration-ms="122748">
+    <test started-at="2025-10-23T15:31:20 IST" name="User Management Tests" finished-at="2025-10-23T15:33:23 IST" duration-ms="122633">
       <class name="com.tests.UserManagementTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:02:31 IST" name="setUp" finished-at="2025-10-23T15:02:45 IST" duration-ms="14793" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:31:20 IST" name="setUp" finished-at="2025-10-23T15:31:43 IST" duration-ms="22417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:02:45 IST" name="initializePages" finished-at="2025-10-23T15:02:45 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:31:43 IST" name="initializePages" finished-at="2025-10-23T15:31:43 IST" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method signature="testCompleteUserManagementFlow()[pri:1, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:02:45 IST" name="testCompleteUserManagementFlow" description="Complete User Management Flow: Login, Add, Search, Delete, Logout" finished-at="2025-10-23T15:04:33 IST" duration-ms="107473" status="PASS">
+        <test-method signature="testCompleteUserManagementFlow()[pri:1, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:31:43 IST" name="testCompleteUserManagementFlow" description="Complete User Management Flow: Login, Add, Search, Delete, Logout" finished-at="2025-10-23T15:33:23 IST" duration-ms="99705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompleteUserManagementFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:04:33 IST" name="tearDown" finished-at="2025-10-23T15:04:33 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.UserManagementTest@6771beb3]" started-at="2025-10-23T15:33:23 IST" name="tearDown" finished-at="2025-10-23T15:33:23 IST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
