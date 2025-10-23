@@ -1,4 +1,4 @@
-package com.utiltities;
+package com.utilities;
 
 import com.microsoft.playwright.*;
 import org.testng.annotations.*;

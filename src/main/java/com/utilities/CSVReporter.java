@@ -1,4 +1,4 @@
-package com.utiltities;
+package com.utilities;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

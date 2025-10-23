@@ -1,7 +1,8 @@
 package com.tests;
 
 import com.pages.*;
-import com.utiltities.TestBase;
+import com.utilities.TestBase;
+
 import org.testng.annotations.*;
 
 import com.microsoft.playwright.Page;
