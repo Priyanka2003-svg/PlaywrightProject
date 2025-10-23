@@ -75,40 +75,39 @@ public class UserManagementTest extends TestBase {
     private void addUser() {
         System.out.println("Opening Admin section...");
         adminPage.openAdminSection();
-        
-        // Wait for Admin page to load
         page.waitForTimeout(2000);
         
         System.out.println("Clicking Add button...");
         adminPage.clickAddButton();
-        
-        // Wait for form to load
         page.waitForTimeout(2000);
         
         System.out.println("Filling user details...");
         System.out.println("- Employee Name: " + employeeName);
         System.out.println("- Username: " + newUsername);
         System.out.println("- Password: " + newPassword);
-        
         adminPage.fillUserDetails(employeeName, newUsername, newPassword, newPassword);
         
-        // Wait a bit before saving
         page.waitForTimeout(1000);
-        
         System.out.println("Saving user...");
         adminPage.saveUser();
         
-        // Wait for success message or page reload
+        // Wait for success message or navigation
+        page.waitForTimeout(5000);
+        
+        // Navigate back to admin section explicitly
+        System.out.println("Navigating back to Admin list...");
+        adminPage.openAdminSection();
         page.waitForTimeout(3000);
+        
         System.out.println("✓ User added successfully");
     }
     
     private void searchUser() {
+        System.out.println("Navigating back to Admin section for search...");
+        adminPage.openAdminSection(); // Re-open admin section
+        page.waitForTimeout(3000); // Wait for page to load
+        
         System.out.println("Searching for user: " + newUsername);
-        
-        // Wait for search form to be ready
-        page.waitForTimeout(2000);
-        
         searchUserPage.searchUser(newUsername, userRole, userStatus);
         
         // Wait for search results
@@ -151,6 +150,7 @@ public class UserManagementTest extends TestBase {
         
         System.out.println("✓ Logout successful");
     }
+    
     
     // Additional individual test methods (optional)
     
